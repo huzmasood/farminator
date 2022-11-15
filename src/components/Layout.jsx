@@ -23,6 +23,7 @@ function Layout() {
               sm="3"
               xs="4"
               className={`px-0 main-menu ${hamburger ? "show" : "hide"}`}
+              style={{ transition: hamburger ? "0s" : "0.5s" }}
             >
               <Sidebar />
             </Col>

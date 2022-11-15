@@ -43,11 +43,12 @@ body::-webkit-scrollbar {
 }
 
 #login {
-  background-image: url("assets/img/login-bg.png");
+  background-image: url(assets/img/login-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow-y: auto;
 }
 
 ul,
@@ -88,7 +89,8 @@ header .navbar-brand {
 #login .card {
   border: 2px solid var(--txt-brown);
   border-radius: 15px;
-  padding: 50px;
+  padding: 20px;
+  max-height: 660px;
 }
 
 #login p {
@@ -143,13 +145,13 @@ header .navbar-brand {
     rgb(190, 251, 188) 35%,
     rgb(221, 248, 220) 100%
   );
-  color: #fff;
+  color: #000;
 }
 
 .sidebar li a.active svg,
 .sidebar li a:hover svg {
-  fill: #fff;
-  stroke: #fff;
+  fill: #000;
+  stroke: #000;
 }
 
 .threeCol .card p {
@@ -166,7 +168,7 @@ header .navbar-brand {
 
 .threeCol .card:after {
   position: absolute;
-  content: url("assets/img/dot-mask.png");
+  content: url(assets/img/dot-mask.png);
   right: 0;
   top: 0;
   opacity: 0.4;
@@ -213,6 +215,10 @@ header .navbar-brand {
 
 .pointer {
   cursor: pointer;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 .btn-1 {
