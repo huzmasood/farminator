@@ -128,7 +128,7 @@ header .navbar-brand {
 .sidebar {
   height: calc(100vh - 64.25px);
   overflow: auto;
-  position: sticky;
+  position: fixed;
   top: 64.25px;
 }
 
